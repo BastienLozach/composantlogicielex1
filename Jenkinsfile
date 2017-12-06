@@ -23,7 +23,7 @@ pipeline {
 		}
         stage('Tomcat'){
             steps {
-                sh 'docker run -v target/1.0-SNAPSHOT/my-app-1.0-SNAPSHOT.war:/usr/local/tomcat/webapps/myapp.war -it -p 8080:8080 tomcat'
+                sh 'docker run -v target/composant-logiciel-ex1.war:/usr/local/tomcat/webapps/myapp.war -it -p 8080:8080 tomcat'
             }
         }
 	}
