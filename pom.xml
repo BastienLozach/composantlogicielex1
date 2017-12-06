@@ -20,6 +20,17 @@
   <build>
     <finalName>composant-logiciel-ex1</finalName>
 
+      <plugins>
+          <plugin>
+              <groupId>org.apache.tomcat.maven</groupId>
+              <artifactId>tomcat8-maven-plugin</artifactId>
+              <configuration>
+                  <url>http://172.0.0.2:8080/manager/</url>
+                  <server>TomcatServer</server>
+                  <path>/exercice</path>
+              </configuration>
+          </plugin>
+      </plugins>
   </build>
 
 
